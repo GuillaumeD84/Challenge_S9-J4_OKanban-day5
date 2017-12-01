@@ -1,0 +1,173 @@
+body {
+  background-color: #f1f1f1;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#board {
+  padding: 20px 0px;
+
+}
+.list {
+  /*position: relative;*/
+  width: 250px;
+  margin: 0.4em;
+  background-color: #ccc;
+}
+.list h2 {
+  margin: 0;
+  /*padding: 10px 0 0 10px;*/
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/*//////////////////////////////////////*/
+.listNameH2,
+.listNameInput {
+  margin: 0 10px;
+  margin-top: 10px;
+}
+
+.listNameInput {
+  display: none;
+}
+
+.listNameButton {
+  width: 1.7rem;
+  height: 1.7rem;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.listNameButton:hover {
+  cursor: pointer;
+  color: ghostwhite;
+}
+
+.listNameButton.editListName:hover {
+  background-color: skyblue;
+}
+.listNameButton.validListName:hover {
+  background-color: yellowgreen;
+}
+.listNameButton.cancelListName:hover {
+  background-color: crimson;
+}
+
+.inputListName {
+  width: 70%;
+}
+
+
+
+.cardInput {
+  display: none;
+}
+
+.cardTitleButton {
+  width: 1.7rem;
+  height: 1.7rem;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.cardTitleButton:hover {
+  cursor: pointer;
+  color: ghostwhite;
+}
+
+.cardTitle .cardTitleButton {
+  visibility: hidden;
+}
+
+.card:hover .cardTitle .cardTitleButton {
+  visibility: visible;
+}
+
+.cardTitleButton.editCardTitle:hover {
+  background-color: skyblue;
+}
+.cardTitleButton.removeCard:hover {
+  background-color: black;
+}
+.cardTitleButton.validCardTitle:hover {
+  background-color: yellowgreen;
+}
+.cardTitleButton.cancelCardTitle:hover {
+  background-color: crimson;
+}
+
+.inputCardTitle {
+  width: 70%;
+}
+/*//////////////////////////////////////*/
+
+.cards {
+  padding: 1em 0.6em 1em;
+}
+.card {
+  font-size: 0.8em;
+  cursor: default;
+  margin-bottom: 5px;
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #987654;
+  background-color: #fff;
+}
+.card.active {
+  transition: transform 0.1s;
+  transform: rotate(5deg);
+}
+.actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.actions div {
+  background-color: #eaeaea;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px 2px;
+  cursor: pointer;
+  visibility: hidden;
+}
+.card:hover .actions div {
+  visibility: visible;
+}
+
+/*//////////////////////////////////////*/
+.addList {
+  display: flex;
+  align-items: center;
+}
+.addList .createList {
+  text-align: center;
+}
+#addListBtn {
+  border-radius: 4px;
+}
+#addListBtn:hover {
+  background-color: coral;
+}
+#addListText::placeholder {
+  text-align: center;
+}
+
+.addCard {
+  display: flex;
+  align-items: center;
+  margin: 0.6em;
+  background-color: #F5F5F5;
+}
+.addCard .createCard {
+  text-align: center;
+}
+.addCardBtn {
+  border-radius: 4px;
+}
+.addCardBtn:hover {
+  background-color: coral;
+}
+.addCardText::placeholder {
+  text-align: center;
+}
